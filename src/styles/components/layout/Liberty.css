@@ -1,0 +1,20 @@
+.galeriaLiberty{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgLiberty{
+    width: 200px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px rgb(145, 142, 142);
+    
+  }
+  
+  .imgLiberty:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    animation-duration: 1.8;
+  }

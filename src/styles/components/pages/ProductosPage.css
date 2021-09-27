@@ -1,0 +1,36 @@
+.bannerprincipal {
+  width: 100%;
+}
+
+.textocolecciones {
+  font-family: "Allura", cursive;
+  font-size: 80px;
+  text-align: center;
+  margin: 30px;
+  color: #f6d5cb;
+  text-shadow: 2px 1px 2px black;
+}
+
+.bannercoleccion {
+  padding: 0px;
+  margin: 0 auto;
+  height: 400px;
+}
+
+.bannercoleccion img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.bannercoleccion p {
+  font-family: "Allura", cursive;
+  font-size: 200px;
+  text-align: center;
+  color: white;
+  transform: translateY(-450px);
+}
+
+.galeriaclassic{
+    width: 100%;
+    height: auto;
+}

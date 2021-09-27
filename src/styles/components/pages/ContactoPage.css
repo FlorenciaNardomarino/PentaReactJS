@@ -1,0 +1,186 @@
+/* Seccion contacto -------------------------------------------------------*/
+
+.primerbloque {
+  display: flex;
+  flex-direction: column;
+}
+
+.frentetienda {
+  width: 40%;
+  margin: 40px 40px 40px 60px;
+  border-radius: 8px;
+}
+
+.acercade {
+  display: flex;
+  margin-top: 50px;
+}
+.acercade p {
+  margin: 100px 40px 40px 40px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  width: 40%;
+  color: rgb(85, 85, 85);
+}
+
+.mision {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chicaentienda {
+  width: 40%;
+  margin: 40px 80px 40px 40px;
+  border-radius: 8px;
+}
+
+.mision p {
+  margin: 100px 40px 40px 60px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  width: 40%;
+  color: rgb(85, 85, 85);
+}
+
+.contacto p {
+  text-align: center;
+  margin: 50px auto;
+  background-color: #f6d5cb;
+  font-family: "Allura", cursive;
+  font-size: 50px;
+  color: white;
+  width: 100%;
+}
+
+.trabajaconnosotros {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.trabajaconnosotros img {
+  width: 50%;
+}
+
+.trabajaconnosotros p {
+  padding: 50px;
+  font-family: "Allura", cursive;
+  font-size: 65px;
+  color: #f6d5cb;
+  text-shadow: 1px 1px 2px rgb(43, 42, 42);
+}
+
+.trabajaconnosotros div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trabajaconnosotros div button {
+  background-color: #f6d5cb;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(43, 42, 42);
+  padding: 8px;
+  border-radius: 5px;
+  border: 3px solid #f6d5cb;
+  box-shadow: 1px 1px 2px rgb(43, 42, 42);
+}
+
+.trabajaconnosotros div button:hover {
+  background-color: #b6998f;
+  border: 3px solid #b6998f;
+  cursor: pointer;
+}
+
+/* Inicio formulario de contacto */
+
+.formulariocontacto {
+  margin: 0 auto;
+  width: 500px;
+  padding: 1em;
+  border: 5px solid rgba(187, 159, 159, 0.336);
+  border-radius: 1em;
+}
+
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgb(114, 114, 114);
+}
+
+form li {
+  margin-top: 1em;
+}
+
+input,
+textarea {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid rgba(187, 159, 159, 0.5);
+  border-radius: 6px;
+  color: rgb(85, 85, 85);
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgb(53, 50, 50);
+}
+
+textarea {
+  vertical-align: top;
+  height: 15em;
+}
+
+label {
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+}
+
+.formulariocontacto button {
+  background-color: transparent;
+  border: 3px solid rgba(187, 159, 159, 0.5);
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.15em;
+  color: #a58278;
+  margin-right: 50%;
+  width: 100px;
+
+}
+
+.formulariocontacto button:hover { 
+  background-color: #a58278;
+  color: #ffffff;
+  border: 3px solid #a58278;
+  cursor: pointer;
+}
+
+/* Fin formulario de contacto */
+
+.textoshopping {
+  text-align: center;
+  font-family: "Allura", cursive;
+  font-size: 50px;
+  color: white;
+  background-color: #f6d5cb;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.listashopping {
+  display: flex;
+}
+
+.listashopping img {
+  width: 100px;
+  margin-right: 8px;
+}

@@ -1,0 +1,54 @@
+h1 {
+    font-family: "Allura", cursive;
+    font-size: 2.5em;
+    color: white;
+  }
+  
+  .logoLink{
+    text-decoration: none;
+  }
+
+  nav {
+    background-color: #b5cccd;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navegacion {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+  }
+  
+  .navegacion a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+  }
+  
+  ul.navegacion a:hover {
+    color: gray;
+  }
+  
+  .instagram {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .facebook {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .sociales {
+    width: 90px;
+    height: 30px;
+    display: flex;
+  }
+  

@@ -1,0 +1,55 @@
+.titulos h2 {
+  text-align: center;
+  font-family: "allura", cursive;
+  font-size: 70px;
+  color: #f6d5cb;
+  text-shadow: 2px 1px 2px rgb(99, 96, 96);
+  margin-top: 30px;
+}
+
+.titulos h4 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(104, 103, 103);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.formulariocv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.formulariocv input {
+  width: 40%;
+  margin: 20px 30px;
+  border-style: none;
+  border-bottom: 2px solid #b5cccd;
+  border-radius: 0px;
+  outline: none;
+}
+
+.formulariocv select {
+  width: 40%;
+  margin: 20px 30px;
+}
+
+.formulariocv button {
+  width: 80px;
+  height: 35px;
+  transform: translate(-250px, 80px);
+  background-color: #b5cccd;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+
+.formulariocv button:hover {
+  background-color: #869a9b;
+  cursor: pointer;
+}
