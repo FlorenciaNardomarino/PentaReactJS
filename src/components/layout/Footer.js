@@ -7,7 +7,7 @@ const Footer = () => {
       <footer>
         <div>
           <ul>
-            <li class="marcaregistrada">Penta &reg;</li>
+            <li className="marcaregistrada">Penta &reg;</li>
             <li>Diseñado por Florencia Nardomarino</li>
           </ul>
         </div>

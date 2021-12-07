@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import axios from 'axios';
+
 import React from "react";
 import Devoto from '../images/devoto.jpeg';
 import Nine from '../images/nine.png';
@@ -15,8 +18,40 @@ import Store from '../images/store.jpeg';
 import Trabajo from '../images/trabajo.jpeg';
 import '../styles/components/pages/ContactoPage.css';
 import {Link} from 'react-router-dom';
+import { scryRenderedDOMComponentsWithTag } from 'react-dom/cjs/react-dom-test-utils.production.min';
 
-const ContactoPage = () => {
+const ContactoPage = (props) => {
+
+  const initialForm = {
+    nombre: "",
+    mail: "",
+    mensaje:"",
+  }
+
+  const [sending, setSending]= useState (false);
+  const [msg, setMsg]= useState ("");
+  const [formData, setFormData] = useState(initialForm);
+
+  const handleChange = e => {
+    const { name, value} = e.target;
+    setFormData(oldData => ({
+      ...oldData,
+      [name]: value
+    }));
+  }  
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    scryRenderedDOMComponentsWithTag('');
+    setSending(true)
+    const response = await axios.post('http://localhost:3000/api/contacto', formData);
+    setSending(false);
+    setMsg(response.data.message);
+    if (response.data.error === false) {
+      setFormData (initialForm)
+    }
+  } 
+
   return (
     <>
       <main>
@@ -41,23 +76,22 @@ const ContactoPage = () => {
         </div>
         <div className="contacto">
           <p>Envianos tu consulta</p>
-          <form className="formulariocontacto">
+          <form action="/contacto" method="post" className="formulariocontacto" onSubmit={handleSubmit}>
             <ul>
               <li>
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="user_name" />
+                <input type="text" id="name" name="nombre" value={props.formData} onChange={handleChange}/>
               </li>
               <li>
                 <label for="mail">Mail:</label>
-                <input type="email" id="mail" name="user_mail" />
+                <input type="email" id="mail" name="mail" value={props.formData} onChange={handleChange} />
               </li>
               <li>
                 <label for="msg">Mensaje:</label>
-                <textarea id="msg" name="user_message"></textarea>
+                <textarea id="msg" name="mensaje" value={props.formData} onChange={handleChange}></textarea>
               </li>
               <li className="button">
-                <button type="submit">Enviar </button>
-              </li>
+                <input type="submit" value="Enviar"/> {sending ? <p>Enviando...</p>:null } {msg ? <p>{msg}</p>:null}              </li>
             </ul>
           </form>
         </div>
